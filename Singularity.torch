@@ -43,7 +43,7 @@ apt-get update
 /home/user/miniconda/bin/conda install Pillow
 /home/user/miniconda/bin/conda install matplotlib
 /home/user/miniconda/bin/conda install tqdm
-/home/user/miniconda/bin/conda install h5py
+#/home/user/miniconda/bin/conda install h5py
 
 /home/user/miniconda/bin/conda install pandas
 #/home/user/miniconda/bin/conda install -c simpleitk simpleitk

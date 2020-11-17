@@ -48,7 +48,7 @@ python3.7 get-pip.py
 apt-get install -y build-essential 
 
 # scikit, scipy
-apt-get install -y python3-sklearn python3-sklearn-lib
+#apt-get install -y python3-sklearn python3-sklearn-lib
 apt-get clean
 
 pip3 install --upgrade pip

@@ -45,6 +45,7 @@ apt-get install -y python3.7-dev
 #apt-get install -y python3-pip
 wget https://bootstrap.pypa.io/get-pip.py
 python3.7 get-pip.py
+apt-get install -y build-essential 
 
 # scikit, scipy
 apt-get install -y python3-sklearn python3-sklearn-lib
@@ -57,6 +58,14 @@ pip install tqdm
 pip install h5py
 pip install pandas
 pip install comet_ml
+
+# sklearn from source
+git clone git://github.com/scikit-learn/scikit-learn.git
+cd scikit-learn
+pip install cython
+pip install --verbose --editable .
+
+cd ..
 git clone https://github.com/facebookresearch/mmf.git
 cd mmf
 pip install --editable .

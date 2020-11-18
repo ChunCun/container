@@ -1,6 +1,5 @@
 Bootstrap: docker
-From: anibali/pytorch:1.5.0-cuda10.2-ubuntu18.04
-# anibali/pytorch:1.4.0-cuda10.1-ubuntu16.04
+From: anibali/pytorch:1.4.0-cuda10.1-ubuntu16.04
 
 %environment
 # use bash as default shell
@@ -66,6 +65,8 @@ git clone git://github.com/scikit-learn/scikit-learn.git
 cd scikit-learn
 pip install cython
 pip install --verbose --editable .
+
+pip install torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
 
 cd ..
 git clone https://github.com/facebookresearch/mmf.git

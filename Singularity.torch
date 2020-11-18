@@ -1,5 +1,6 @@
 Bootstrap: docker
-From: anibali/pytorch:1.4.0-cuda10.1-ubuntu16.04
+From: anibali/pytorch:1.5.0-cuda10.2-ubuntu18.04
+# anibali/pytorch:1.4.0-cuda10.1-ubuntu16.04
 
 %environment
 # use bash as default shell
